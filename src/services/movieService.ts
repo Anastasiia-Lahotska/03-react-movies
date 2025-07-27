@@ -15,7 +15,7 @@ export async function fetchMovies(query: string): Promise<Movie[]> {
     },
     headers: {
       accept: 'application/json',
-      Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjYWU5ZmU4ODViZjRmM2JlMGE4ZTBhZWQ1YThhNzYwMSIsIm5iZiI6MTc1MzU5MTM4My43OTYsInN1YiI6IjY4ODVhZTU3ZWU0Y2IwMWMzZmQ5YjI4MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.lTh3ruGlNrgY2mewL1Ls7cn0IsqJVGVhRnMf8DUK47I`,
+      Authorization: `Bearer ${import.meta.env.VITE_TMDB_TOKEN}`,
     },
   };
 
